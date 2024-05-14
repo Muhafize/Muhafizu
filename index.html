@@ -210,42 +210,39 @@
         <h2 class="heading">Contact <span>Me!</span></h2>
         
 	<form action="https://formspree.io/f/xjvnzoov" method="POST">
-		<label for="fname">First name:</label>
-  <input type="text" id="fname" name="fname"><br><br>
-  <label for="lname">Last name:</label>
-  <input type="text" id="lname" name="lname"><br><br>
-  <input type="submit" value="Submit">
-            <div class="input-box">
-                <dive class="input-field">
-                    <input type="text" placeholder="Full Name" required>
-                    <span class="focus"></span>
-                </dive>
-                <dive class="input-field">
-                    <input type="text" placeholder="Email Address" required>
-                    <span class="focus"></span>
-                </dive>
-            </div>
+		<fieldset id="fs-frm-inputs">
+                <div class="input-box">
+                    <dive class="input-field">
+                        <label for="full-name"></label>
+                        <input type="text" name="name" id="full-name" placeholder="Full Name" required="">
+                    </dive>
+                    <dive class="input-field">
+                        <label for="email-address"></label>
+                        <input type="email" name="_replyto" id="email-address" placeholder="Email Address" required="">
+                    </dive>
+                </div>
 
-            <div class="input-box">
-                <dive class="input-field">
-                    <input type="number" placeholder="Mobile Number" required>
-                    <span class="focus"></span>
-                </dive>
-                <dive class="input-field">
-                    <input type="text" placeholder="Email Subject" required>
-                    <span class="focus"></span>
-                </dive>
-            </div>
+                <div class="input-box">
+                    <dive class="input-field">
+                        <label for="telephone"></label>
+                        <input type="telephone" name="telephone" id="telephone" placeholder="Mobile Number">
+                    </dive>
+                    <div class="input-field">
+                        <label for="Email-subject"></label>
+                        <input type="text" name="Email-subject" id="Email-subject" placeholder="Email-subject" required="">
+                    </div>
+                </div>
 
-            <div class="textarea-field">
-                <textarea name="" id="" col="30" rows="10" placeholder="Your Message" required></textarea>
-                <span class="focus"></span>
-            </div>
+                <div class="textarea-field">
+                    <label for="complaint"></label>
+                    <textarea rows="6" name="complaint" id="complaint" placeholder="Email Subject" required=""></textarea>
+                </div>
 
-            <div class="btn-box btns">
-                <button type="submit" class="btn">Submit</button>
-            </div>
-        </form>
+                <div class="btn-box btns">
+                    <button type="submit" class="btn">Submit</button>
+                </div>
+            </fieldset>
+	</form>
     </section>
 
     <!-- footer design -->
